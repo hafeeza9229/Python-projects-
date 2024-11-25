@@ -1,15 +1,12 @@
 """
-Determine if a robot, starting at the origin (0, 0) on a 2D grid, returns
-to the origin after following a sequence of movements.
+Determine if a robot, starting at the origin (0, 0) on a 2D grid, returns to the origin after following a sequence of movements.
 
 The robot can move up ('U'), down ('D'), left ('L'), and right ('R').
-
 Movements:
 'U' increases the y-coordinate by 1.
 'D' decreases the y-coordinate by 1.
 'L' decreases the x-coordinate by 1.
 'R' increases the x-coordinate by 1.
-
 Start with x = 0 and y = 0.
 
 Args:
@@ -18,8 +15,6 @@ Args:
 Returns:
     bool: True if the robot returns to the origin, False otherwise.
 """
-
-
 def return_to_origin(moves):
 
     # Initial position
@@ -28,7 +23,6 @@ def return_to_origin(moves):
 
     # loop to check the position
     for i in moves:
-
         if i == "U":
             y += 1
         elif i == "D":
