@@ -94,8 +94,12 @@ def main():
 
         # ask for other city
         choice = input("Do you want to check for another city? (yes/no) ")
-        if choice.lower() == "no":
-            print("Thank you for using the Weather App. Good Bye!")
+        if choice.lower() == "no" or choice.lower() == "yes":
+            if choice.lower() == "no":
+                print("Thank you for using the Weather App. Good Bye!")
+                break
+        else:
+            print("Invalid input....")
             break
 
 main()
