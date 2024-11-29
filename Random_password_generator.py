@@ -1,6 +1,6 @@
-import string
-import secrets
-from datetime import datetime
+import string   # for pre-defined characters
+import secrets    # for cryptographically secure random numbers & choices
+from datetime import datetime    # for timestamping
 
 # Function to generate a random password
 def generate_password(length, include_special_char):
