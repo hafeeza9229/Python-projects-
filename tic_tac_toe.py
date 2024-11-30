@@ -21,9 +21,12 @@ def toggle_player(row, column):
             player = "O" if player == "X" else "X"
             label.config(text=f"Player {player}'s turn")
 
-    if check_winner() is True:
-        label.config(text=f"{player} wins!")
-
+    if check_winner() is True and player == "X":
+        label.config(text=f"{players[1]} wins!")
+        
+    elif check_winner() is True and player == "O":
+        label.config(text=f"{players[0]} wins!")
+    
     elif check_winner() == "tie":
         label.config(text="Tie")
 
