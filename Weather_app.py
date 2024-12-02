@@ -17,7 +17,7 @@ import requests
 
 
 URL_KEY = "https://api.openweathermap.org/data/2.5/weather"
-API_KEY = "6ac8d21c84b9caf7b3c2d560113efe27"
+API_KEY = "Your_API_KEY"         # Enter your api here
 
 def fetch_weather(city_name, unit):
     try:
