@@ -2,7 +2,7 @@ import sys      # for enhanced error handling
 import google.generativeai as genai     # for API calls
 
 # set your API key for Google Generative AI
-genai.configure(api_key= "AIzaSyBv8CIpXeN4zxvhfE0G0Jb34yr3v6rt6Ak")
+genai.configure(api_key= "Your_API_here")        # Enter your API 
 
 # Function to interact with Google Generative AI 
 def ask_question(question):
