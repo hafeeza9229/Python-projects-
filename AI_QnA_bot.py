@@ -9,8 +9,6 @@ def ask_question(question):
     try:
 
         model = genai.GenerativeModel("gemini-pro")     # specifies AI model
-        # Start a chat session with optional history
-        # chat = model.start_chat(history=[{"author": "user", "content": question}])
         chat = model.start_chat()
         reponse = chat.send_message(question)
         # extract generated response
