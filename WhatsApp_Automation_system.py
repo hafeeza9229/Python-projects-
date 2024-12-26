@@ -16,6 +16,7 @@ logging.basicConfig(filename="whatsapp_automation.log",
 # Function: Initializa WebDriver
 def setup_driver():
     options = webdriver.ChromeOptions()
+    options.add_argument("--user-data-dir=./user_data")     # preserve login session
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
     driver.get("https://web.whatsapp.com/")
